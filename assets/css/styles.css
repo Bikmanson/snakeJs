@@ -1,0 +1,52 @@
+body{
+    position: relative;
+}
+
+.row{
+    overflow: hidden;
+}
+
+.wall{
+
+}
+
+.cell, .snake, .food {
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+    float: left;
+}
+
+.cell{
+    background: grey;
+}
+
+.snake{
+    background: red;
+}
+
+.food{
+    background: orange;
+}
+
+.error{
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    background: red;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    padding-top:100px;
+    display: none;
+}
+
+.error__btn{
+    height: 42px;
+    font-size: 32px;
+}

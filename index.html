@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+
+<div id="place"></div>
+
+<div id="error" class="error">
+    <div class="error__text">You losed</div>
+    <button class="error__btn" id="tryAgainBtn">try again</button>
+</div>
+
+<script src="assets/js/matrix.js"></script>
+<script src="assets/js/field.js"></script>
+<script src="assets/js/snake.js"></script>
+<script src="assets/js/food.js"></script>
+<script src="assets/js/game.js"></script>
+
+<script>
+
+ var game = new SnakeGame('place');
+ game.defaultStartView();
+ game.addEventListeners();
+
+</script>
+
+</body>
+</html>
